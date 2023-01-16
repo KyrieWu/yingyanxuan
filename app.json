@@ -1,0 +1,38 @@
+{
+  "pages":[
+    "pages/home/home",
+    "pages/topic/topic",
+    "pages/category/category",
+    "pages/cart/cart",
+    "pages/user/user",
+    "custom-tab-bar/index"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "敦敦严选",
+    "navigationBarTextStyle":"black"
+  },
+  "tabBar": {
+      "custom": true,
+      "color": "#333",
+      "selectedColor": "#8B0000",
+      "list":  [{
+        "pagePath": "pages/home/home",
+        "text": "首页"
+      }, {
+        "pagePath": "pages/topic/topic",
+        "text": "专题"
+      }, {
+        "pagePath": "pages/category/category",
+        "text": "分类"
+      }, {
+        "pagePath": "pages/cart/cart",
+        "text": "购物车"
+      }, {
+        "pagePath": "pages/user/user",
+        "text": "用户"
+      }]
+  },
+  "sitemapLocation": "sitemap.json"
+}

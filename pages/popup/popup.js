@@ -1,34 +1,20 @@
-// pages/home/home.js
-
-import { GetHomeDataApi } from '../../request/apis'
+// pages/popup/popup.js
 Page({
 
     /**
      * 页面的初始数据
      */
     data: {
-        banner: []
+        blockShow: 1
     },
-    gotoPopUp() {
-        wx.navigateTo({
-            url: '/pages/popup/popup',
-        })
+    onCancel() {
+        wx.navigateBack()  // 返回上一页
     },
-
     /**
      * 生命周期函数--监听页面加载
      */
-    onLoad: async function (options) {
-        // wx.request({
-        //     url: 'http://kumanxuan1.f3322.net:8001/index/index', 
-        //     success (res) {
-        //       console.log(res.data)
-        //     }
-        //   })
-        let result = await GetHomeDataApi()
-        let { banner } = result.data
-        console.log(banner);
-        this.setData({ banner })
+    onLoad(options) {
+
     },
 
     /**
@@ -42,9 +28,7 @@ Page({
      * 生命周期函数--监听页面显示
      */
     onShow() {
-        this.getTabBar().setData({
-            active: 0
-        })
+
     },
 
     /**

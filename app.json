@@ -5,12 +5,16 @@
     "pages/category/category",
     "pages/cart/cart",
     "pages/user/user",
+    "pages/popup/popup",
+    "components/HistroyHot/HistroyHot",
+    "components/TipsList/TipsList",
+    "components/ProductList/ProductList",
     "custom-tab-bar/index"
   ],
   "window":{
     "backgroundTextStyle":"light",
     "navigationBarBackgroundColor": "#fff",
-    "navigationBarTitleText": "敦敦严选",
+    "navigationBarTitleText": "好货严选",
     "navigationBarTextStyle":"black"
   },
   "tabBar": {

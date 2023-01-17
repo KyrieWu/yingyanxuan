@@ -1,0 +1,20 @@
+.histroy_hot {
+  background-color: #fff;
+  padding: 20rpx;
+}
+.histroy_hot .t {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20rpx;
+}
+.histroy_hot .t .title {
+  font-size: 36rpx;
+}
+.histroy_hot .b {
+  display: flex;
+  flex-wrap: wrap;
+}
+.histroy_hot .b .tag {
+  margin-right: 16rpx;
+  margin-bottom: 16rpx;
+}

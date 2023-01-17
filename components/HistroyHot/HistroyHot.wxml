@@ -1,0 +1,10 @@
+<!--components/HistroyHot/HistroyHot.wxml-->
+<view class="histroy_hot">
+    <view class="t">
+        <view class="title">历史记录</view>
+        <van-icon name="delete-o" />
+    </view>
+    <view class="b">
+        <van-tag wx:for="{{10}}" class="tag" plain color="#666" type="primary">标签</van-tag>
+    </view>
+</view>

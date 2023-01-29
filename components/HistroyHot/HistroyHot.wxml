@@ -2,9 +2,17 @@
 <view class="histroy_hot">
     <view class="t">
         <view class="title">历史记录</view>
-        <van-icon name="delete-o" />
+        <van-icon bindtap="clearFn" name="delete-o" />
     </view>
     <view class="b">
-        <van-tag wx:for="{{10}}" class="tag" plain color="#666" type="primary">标签</van-tag>
+        <van-tag bindtap="gotoProductList" data-keyword="{{item}}" wx:for="{{historyKeywordList}}" wx:key="this" class="tag" plain color="#666" type="primary">{{item}}</van-tag>
+    </view>
+</view>
+<view class="histroy_hot">
+    <view class="t">
+        <view class="title">热门搜索</view>
+    </view>
+    <view class="b">
+        <van-tag bindtap="gotoProductList" data-keyword="{{item.keyword}}" wx:for="{{hotKeywordList}}" wx:key="index" class="tag" plain color="{{item.is_hot==1?'darkred':'#666'}}" type="primary">{{item.keyword}}</van-tag>
     </view>
 </view>

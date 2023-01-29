@@ -1,14 +1,18 @@
 <!--pages/popup/popup.wxml-->
 <van-search
-  value="{{ value }}"
-  placeholder="请输入搜索关键词"
+  value="{{ useInput }}"
+  placeholder="{{defaultKeyword.keyword}}"
   show-action
   bind:search="onSearch"
   bind:cancel="onCancel"
 />
 
-<HistroyHot wx:if="{{blockShow===1}}"></HistroyHot>
+<HistroyHot
+historyKeywordList="{{historyKeywordList}}"
+hotKeywordList="{{hotKeywordList}}"
+bind:fn="changeBlockShow"
+ wx:if="{{blockShow===1}}"></HistroyHot>
 <TipsList wx:elif="{{blockShow===2}}"></TipsList>
-<ProductList wx:else></ProductList>
+<ProductList goodsList="{{goodsList}}" filterCategory="{{filterCategory}}" filterCategoryCurrentId="{{filterCategoryCurrentId}}" wx:else></ProductList>
 
 

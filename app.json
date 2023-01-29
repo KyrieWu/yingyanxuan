@@ -9,6 +9,7 @@
     "components/HistroyHot/HistroyHot",
     "components/TipsList/TipsList",
     "components/ProductList/ProductList",
+    "components/GoodList/GoodList",
     "custom-tab-bar/index"
   ],
   "window":{

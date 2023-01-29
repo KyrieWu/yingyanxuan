@@ -4,5 +4,25 @@
     "setting": {
         "compileHotReLoad": true,
         "urlCheck": false
+    },
+    "condition": {
+        "miniprogram": {
+            "list": [
+                {
+                    "name": "",
+                    "pathName": "components/GoodList/GoodList",
+                    "query": "",
+                    "launchMode": "default",
+                    "scene": null
+                },
+                {
+                    "name": "",
+                    "pathName": "components/HistroyHot/HistroyHot",
+                    "query": "",
+                    "launchMode": "default",
+                    "scene": null
+                }
+            ]
+        }
     }
 }

@@ -1,0 +1,11 @@
+<!--components/GoodList/GoodList.wxml-->
+<view class="goods_list">
+    <view class="item" wx:for="{{goodsList}}" wx:key="id">
+        <image mode="widthFix" src="{{item.list_pic_url}}"  />
+        <view>{{item.name}}</view>
+        <view class="price">{{md1.RMBFormater(item.retail_price)}}</view>
+    </view>
+</view>
+
+
+<wxs src="../../utils/price.wxs" module="md1"></wxs>

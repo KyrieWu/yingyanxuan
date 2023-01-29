@@ -27,7 +27,6 @@ Page({
         //   })
         let result = await GetHomeDataApi()
         let { banner } = result.data
-        console.log(banner);
         this.setData({ banner })
     },
 
